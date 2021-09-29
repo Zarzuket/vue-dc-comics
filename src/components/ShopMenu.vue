@@ -2,10 +2,10 @@
   <div class="background">
     <div class="container">
         <div v-for="(single,index) in menu" :key="index" class="container_img">
-            <img :src="single.text" alt="">
-        </div>
-        <div>
-            
+            <img :src="'../img/' + single.text + '.png'" alt="">
+            <div class="container_text">
+                {{single.info}}
+            </div>
         </div>
     </div>
   </div>
@@ -18,19 +18,19 @@ export default {
         return{
             menu: [
                 {
-                    text:"../../public/img/buy-comics-digital-comics.png",
+                    text:"buy-comics-digital-comics",
                     info: "DIGITAL COMICS"   
                 },
                 {
-                    text:"../assets/img/buy-comics-merchandise.png",
+                    text:"buy-comics-merchandise",
                     info: "DC MERCHANDISE"
                 },
                 {
-                    text:"../assets/img/buy-comics-shop-locator.png",
+                    text:"buy-comics-shop-locator",
                     info:"SUBSCRIPTION"
                 },
                 {
-                    text:"../assets/img/buy-comics-subscriptions.png",
+                    text:"buy-comics-subscriptions",
                     info:"COMIC SHOP LOCATOR"
                 },
             ]
@@ -48,13 +48,20 @@ export default {
 .container{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
     .container_img{
-        height: 100%;
+        display: flex;
+        padding: 0 1.25rem;
         img{
-            height: 12.5rem;
-            width: 12.5rem;
+            width: 30%;
         }
     }
+}
+.container_text{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 .625rem;
 }
 </style>
