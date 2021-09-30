@@ -2,11 +2,16 @@
   <div>
       <div class="background">
         <div class="container">
+            <div class="container_button">
               <button class="btn">SIGN-UP NOW!</button>
+            </div>
+            <div>
+                
+            </div>
             <div class="container_ico">
                 <ul>
                     <li v-for="(ico,index) in icos" :key="index">
-                        <img :src="'../img/' + ico.name + '.png'" alt="">
+                        <img :src="'/img/' + ico.name + '.png'" alt="">
                     </li>
                 </ul>              
             </div>
@@ -25,7 +30,7 @@ export default {
                     name:"footer-facebook"
                 },
                 {
-                    name:"footer-persicope"
+                    name:"footer-periscope"
                 },
                 {
                     name:"footer-pinterest"
@@ -50,11 +55,22 @@ export default {
     background-color: #303030;
     height: 12.5rem;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .btn{
     padding: 10px;
     border:3px solid $primarycolor;
     background-color: #303030;
     color: white;
     font-size: 1.25rem;
+}
+ul{
+    display: flex;
+    li{
+        list-style: none;
+        padding: 0 .625rem;
+    }
 }
 </style>

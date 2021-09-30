@@ -32,7 +32,7 @@ export default {
                 {
                     text:"buy-comics-subscriptions",
                     info:"COMIC SHOP LOCATOR"
-                },
+                }
             ]
         }
     }
@@ -54,7 +54,7 @@ export default {
         display: flex;
         padding: 0 1.25rem;
         img{
-            width: 30%;
+            width: 20%;
         }
     }
 }

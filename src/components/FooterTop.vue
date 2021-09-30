@@ -141,10 +141,12 @@ export default {
 
 <style lang="scss" scoped>
 .background{
-    background-image: url("/img/footer-bg.jpg");
+    background-image: url("~@/assets/img/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: black;
-    height: 18.75rem;
     color: white;
+    padding: 2.25rem 0;
 }
 ul{
     padding: .625rem .625rem;
@@ -163,7 +165,7 @@ ul{
 .container{
     display: flex;
 } 
-.container_list{
+.container_list:not(:first-child){
     padding: 0 .9375rem;
 }
 
