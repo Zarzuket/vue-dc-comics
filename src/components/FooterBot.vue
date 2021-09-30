@@ -5,8 +5,8 @@
             <div class="container_button">
               <button class="btn">SIGN-UP NOW!</button>
             </div>
-            <div>
-                
+            <div class="Follow_us">
+                FOLLOW US
             </div>
             <div class="container_ico">
                 <ul>
@@ -53,11 +53,19 @@ export default {
 
 .background{
     background-color: #303030;
-    height: 12.5rem;
+    height: 5.5rem;
 }
 .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.Follow_us{
+    margin-left: auto;
+    color: $primarycolor;
+    font-size: 1.25rem;
+    font-weight:bold;
 }
 .btn{
     padding: 10px;

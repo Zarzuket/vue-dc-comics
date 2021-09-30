@@ -27,6 +27,9 @@
                 </li>
             </ul>    
         </div>
+        <!-- <div class="container_jumbo_bot">
+            <img src="/img/dc-logo-bg.png" alt="">
+        </div> -->
     </div>
   </div>
 </template>

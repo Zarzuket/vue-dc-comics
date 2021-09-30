@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header/>
+    <Jumbo/>
     <MainTop/>
     <ShopMenu/>
     <FooterTop/>
@@ -14,6 +15,7 @@ import MainTop from "./components/MainTop.vue"
 import ShopMenu from "./components/ShopMenu.vue"
 import FooterTop from "./components/FooterTop.vue"
 import FooterBot from "./components/FooterBot.vue"
+import Jumbo from "./components/Jumbo.vue"
 export default {
   name: 'App',
   components: {
@@ -21,7 +23,8 @@ export default {
     MainTop,
     ShopMenu,
     FooterTop,
-    FooterBot
+    FooterBot,
+    Jumbo,
   }
 }
 </script>
