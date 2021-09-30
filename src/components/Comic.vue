@@ -1,11 +1,9 @@
 <template>
-  <div>
     <div class="card">
       <img class="card_img" :src="com.thumb" alt="com.series">
       <div class="card_title">
         {{com.series}}
       </div>
-    </div>
   </div>
 </template>
 
@@ -18,14 +16,17 @@ export default {
 
 <style lang="scss" scoped>
 .card{
-    padding: 5px;
     width: calc(100% / 6);
+    padding: 5px;
 		&_title{
-			text-align: center;
 			color: white;
 		}
 		&_img{
-			width: 100%;
+			height: 9.5rem;
+      width: 9.5rem;
+      padding: .3125rem;
+      object-fit: cover;
+      object-position: top;
 		}
 }
 </style>
