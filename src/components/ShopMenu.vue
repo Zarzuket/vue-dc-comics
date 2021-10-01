@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables";
+@import "../assets/style/variables";
 .background{
     background-color: $primarycolor;
     height: 12.5rem;
