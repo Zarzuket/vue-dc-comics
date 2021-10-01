@@ -144,7 +144,7 @@ export default {
 
 <style lang="scss" scoped>
 .background{
-    background-image: url("~@/assets/img/footer-bg.jpg");
+    background-image: url("../assets/img/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
