@@ -1,20 +1,20 @@
 <template>
-  <div>
-      <div class="background">
-      </div>
-  </div>
+    <div class="background" :style="`background-image: url(${bgImage})`"></div>
 </template>
 
 <script>
 export default {
-
+  name:"Jumbo",
+  props:[
+    "bgImage"
+  ]
 }
 </script>
 
 <style lang="scss" scoped>
 .background{
     height: 25rem;
-    background-image: url(/img/jumbotron.jpg);
     background-position: top;
+    background-position: cover;
 }
 </style>

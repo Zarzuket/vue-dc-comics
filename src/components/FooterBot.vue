@@ -63,13 +63,13 @@ export default {
 }
 .Follow_us{
     margin-left: auto;
-    color: $primarycolor;
+    color: $primaryColor;
     font-size: 1.25rem;
     font-weight:bold;
 }
 .btn{
     padding: 10px;
-    border:3px solid $primarycolor;
+    border:3px solid $primaryColor;
     background-color: #303030;
     color: white;
     font-size: 1.25rem;

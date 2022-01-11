@@ -158,6 +158,9 @@ ul{
         color: grey;
         font-size: .875rem;
     }
+    &:hover{
+        color: red;
+    }
     li:first-child{
         color: white;
         font-weight: bold;

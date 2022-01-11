@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Jumbo/>
+    <Jumbo :bgImage="require('./assets/img/jumbotron.jpg')" />
     <MainTop/>
     <ShopMenu/>
     <FooterTop/>

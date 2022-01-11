@@ -1,72 +1,72 @@
 <template>
-  <div class="container">
-      <div class="logo">
-          <img src="../assets/img/dc-logo.png" alt="xxx">
-      </div>
-      <nav>
-          <ul>
-                <li v-for="(link,index) in menu" :key="index">
-                    <a :href="link.url" :class="{active : link.current}">{{link.text}}</a>
-                </li>
-          </ul>
-      </nav>
-  </div>
+    <body>
+        <header class="container">
+            <img src="../assets/img/dc-logo.png" alt="DC Logo">
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in links" :key="index"><a :href="link.url" :class="{ active : link.current }">{{link.title}}</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    
 </template>
 
 <script>
 export default {
-    name: "Header",
-    data(){
-        return{
-            menu: [
+    name: 'Header',
+    data() {
+        return {
+            links: 
+            [
                 {
-                    text: "CHARACTERS",
-                    url: "#",
+                    title: 'CHARACTERS',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "COMICS",
-                    url: "#",
+                    title: 'COMICS',
+                    url: '#',
                     current: true
                 },
                 {
-                    text: "MOVIES",
-                    url: "#",
+                    title: 'MOVIES',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "TV",
-                    url: "#",
+                    title: 'TV',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "GAMES",
-                    url: "#",
+                    title: 'GAMES',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "COLLECTIBLES",
-                    url: "#",
+                    title: 'COLLECTIBLES',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "VIDEOS",
-                    url: "#",
+                    title: 'VIDEOS',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "FANS",
-                    url: "#",
+                    title: 'FANS',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "NEWS",
-                    url: "#",
+                    title: 'NEWS',
+                    url: '#',
                     current: false
                 },
                 {
-                    text: "SHOP",
-                    url: "#",
+                    title: 'SHOP',
+                    url: '#',
                     current: false
                 }
             ]
@@ -76,37 +76,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/variables";
-
-li{
-    list-style: none;
-
-    a{
-        text-decoration: none;
-        color: grey;
-        font-size: 1.25rem;
-        font-weight: bold;
-        padding: 1.25rem;
-    &.active{
-        border-bottom: .1875rem solid $primarycolor;
-        color: $primarycolor;
+    @import "../assets/style/common.scss";
+    @import "../assets/style/variables.scss";
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 6.5%;
+        }
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    display: flex;
+                    line-height: 110px;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-left: 20px;
+                    color: $darkColor;
+                    &.active {
+                        color: $primaryColor;
+                        border-bottom: 4px solid $primaryColor;
+                    }
+                    &:hover{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
     }
-    }
-}
-.container{
-    display: flex;
-    padding-top: 1.25rem;
-    justify-content: space-between ;
-    align-items: center;
-    
-}
-img{
-    width: 100%;
-}
-nav{
-  ul{
-      display: flex;
-      justify-content: center;
-    }
-}
 </style>

@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/variables";
 .background{
-    background-color: $primarycolor;
+    background-color: $primaryColor;
     height: 12.5rem;
 }
 .container{
